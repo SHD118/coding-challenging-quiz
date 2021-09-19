@@ -9,38 +9,41 @@
 </head>
 <body>
 
-    <div class="start_div">
+    <!-- Start of game will display under start_div-->
+    <div  id="start_div"  >
     <h1>Coding Challenge Quiz</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum vel ratione sint qui id? Earum nisi in quasi commodi?</p>
-    <button class="btn-grad">Start</button>    
+    <p>Enjoy taking the quick coding quiz. This quiz will cover basic html, css and javascript questions. Your score will be the timer state.</p>
+    <button class="btn-grad" id = "start_button">Start</button>    
 </div>
-<div id = "timer" >
-    <h1>setInterval()</h1>
+<!-- Timer will display under timer id -->
+<div id = "timer" class = "hide">
+    <h1>Time</h1>
     <h2 id = "timer-text">0</h2>
 
 </div>
+
+<!-- Question container will display upon start button press and buttons for answers will display dyanmically from the JS -->
 <div id = "question_container" class="hide" >
     <div id="questions">Questions</div>
     <div id ="button_div">
 </div>
+<!--correct_answer_display will display upon correct answer  -->
 <div id="correct_answer_display" class = "hide">
     <h2>Correct</h2>
 </div>
+<!--wrong_answer_display will display upon wrong answer  -->
 <div id="wrong_answer_display" class = "hide">
     <h2>wrong</h2>
 </div>
 </div>
-<div id= "next_back"  class="hide" >
-    <button class="btn-grad" id = "next_button">Next</button> 
-   
-</div>
+<!-- The game_over div will display at end of game and display score which the state of the timer value -->
 <div id = "game_over" class ="hide">
     <h1>Game is over</h1>
     <div id = "score" > 0 </div>
     
 </div>
 
-    
+<!-- displayResults will display the all the wrong answers user input and display what the correct answer was -->
 <div id= "displayResults" class="hide"></div>
 <ul id= "answer_results">
 

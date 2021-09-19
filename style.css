@@ -2,8 +2,14 @@
   display: none;
   border: 5px solid red
 }
-
-
+.start_screen{
+  /* text-align: center; 
+  margin: auto;
+  width: 50%;
+  border: 10px groove purple;
+  padding: 10px;
+  margin-top: 10%; */
+}
 #start_div{
   text-align: center; 
   margin: auto;
@@ -25,6 +31,9 @@
   
 
 }
+/* #button_div{
+
+} */
 #question{
   text-align: center; 
   margin: auto;
@@ -49,13 +58,7 @@
 #wrong_answer_display{
   background-color: red;
 }
-.next_back{
-  text-align: center; 
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  margin-top: 10%;
-}
+
 #game_over{
   text-align: center; 
   margin: auto;
@@ -66,21 +69,21 @@
 }
 .btn-grad {background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%)}
 .btn-grad {
-   margin: 10px;
-   padding: 15px 45px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
-   /* display: block; */
-   align-items: center;
- }
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  /* display: block; */
+  align-items: center;
+}
 
- .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
