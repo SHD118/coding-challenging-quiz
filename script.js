@@ -146,4 +146,43 @@ function createButton() {
   
     }
   }
-  createButton()
+createButton()
+  
+
+function validateButtonClick(e) {
+    hideAnswer()
+    var answerButton = e.target
+    
+    var parseTemp = answerButton.textContent;
+
+    if (parseTemp !== myQuestions[currentIndex].answer) {
+      wrongAnswer.classList.remove("hide");
+      temparr.push({
+        wrong: parseTemp,
+        right: myQuestions[currentIndex].answer
+      })
+      console.log(temparr)
+
+        WrongAnswerDecrement();
+
+      }
+    else {
+      correctAnswer.classList.remove("hide");
+
+    }
+   setTimeout(hideAnswer, 2000)
+    
+    if (myQuestions[currentIndex] !== undefined) {
+      createButton();
+      currentIndex = currentIndex + 1;
+      renderQuestion();
+    }
+  
+}
+  
+function hideAnswer() {
+    correctAnswer.classList.add("hide")
+    wrongAnswer.classList.add("hide")
+  }
+  
+  
