@@ -45,7 +45,7 @@ var questionText = document.getElementById("questions");
 var temparr = [];
 var score = 0;
 var currentIndex = 0;
-let = timerCount = 10000;
+let = timerCount = 30000;
 
 //Render questions when button is press and checks if there are no more questions ->checksIfGameIsOver
 var renderQuestion = function () {
@@ -162,14 +162,17 @@ function validateButtonClick(e) {
 
     var parseTemp = answerButton.textContent;
     console.log("line 195: " + myQuestions[currentIndex].answer)
-    console.log(parseTemp)
+    // console.log(parseTemp)
+    var questionTemp = myQuestions[currentIndex].question
 
     if (parseTemp !== myQuestions[currentIndex].answer) {
         wrongAnswer.classList.remove("hide");
         temparr.push({
+            question : questionTemp,
             wrong: parseTemp,
             right: myQuestions[currentIndex].answer
         })
+        console.log(temparr)
 
         WrongAnswerDecrement();
 
@@ -181,10 +184,14 @@ function validateButtonClick(e) {
     setTimeout(hideAnswer, 2000)
 
     if (myQuestions[currentIndex] !== undefined) {
+        
         createButton();
         currentIndex = currentIndex + 1;
         renderQuestion();
+        
+       
     }
+    createButton();
 
 }
 
@@ -202,7 +209,9 @@ function displayWrongs() {
     console.log("happens")
     for (let i = 0; i < temparr.length; i++) {
         let answerTemp = document.createElement("li");
-        answerTemp.textContent = `question ${i} your answer:  ${temparr[i].wrong} correct answer :${temparr[i].right}`
+        
+        answerTemp.textContent = `question ${i} : ${temparr[i].question}  : your answer:  ${temparr[i].wrong} correct answer:  ${temparr[i].right}`
+        console.log(answerTemp)
         answerResults.appendChild(answerTemp);
     }
 

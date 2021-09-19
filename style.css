@@ -2,14 +2,7 @@
   display: none;
   border: 5px solid red
 }
-.start_screen{
-  /* text-align: center; 
-  margin: auto;
-  width: 50%;
-  border: 10px groove purple;
-  padding: 10px;
-  margin-top: 10%; */
-}
+
 #start_div{
   text-align: center; 
   margin: auto;
@@ -31,9 +24,7 @@
   
 
 }
-/* #button_div{
 
-} */
 #question{
   text-align: center; 
   margin: auto;
@@ -67,6 +58,21 @@
   padding: 10px;
   margin-top: 10%;
 }
+
+/* .li_answers{
+  text-align: center;
+  font-size: larger;
+  list-style: none;
+  margin-top: 10%;
+
+} */
+ul > li{
+  text-align: center;
+  font-size: larger;
+  list-style: none;
+  margin-top: 2%;
+
+}
 .btn-grad {background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%)}
 .btn-grad {
   margin: 10px;
@@ -78,7 +84,6 @@
   color: white;            
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
-  /* display: block; */
   align-items: center;
 }
 
