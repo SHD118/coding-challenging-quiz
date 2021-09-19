@@ -43,6 +43,12 @@
   margin-top: 10%;
   
 }
+#correct_answer_display{
+  background-color: greenyellow;
+}
+#wrong_answer_display{
+  background-color: red;
+}
 .btn-grad {background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%)}
 .btn-grad {
    margin: 10px;
