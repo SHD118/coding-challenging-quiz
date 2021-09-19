@@ -70,3 +70,20 @@ function initialButtonPress() {
   renderQuestion();
   // createButton()
 }
+
+
+// })
+function checkIfGameIsOver() {
+    if (timerCount <= 0 || myQuestions.length <= currentIndex + 1) {
+      gameOver.classList.remove("hide")
+      questionContainer.classList.add("hide")
+      // nextButton.classList.add("hide")
+      timer.classList.add("hide")
+      getScore.textContent = timerText.textContent
+      // clearInterval(IntervalTrigger);
+      timerCount = -1;
+      answerDisplay.classList.remove("hide")
+      displayWrongs();
+    }
+  
+  }
