@@ -44,3 +44,29 @@ var score = 0;
 
 var currentIndex = 0;
 let = timerCount = 10000;
+
+
+
+var currentIndex = 0;
+let = timerCount = 10000;
+
+
+var renderQuestion = function () {
+  
+  if (currentIndex !== myQuestions.length) {
+    var currentQuestion = myQuestions[currentIndex];
+    questionText.textContent = currentQuestion.question;
+  }
+  else {
+    checkIfGameIsOver()
+  }
+
+  // TODO: render the content of currentQuestion
+}
+
+function initialButtonPress() {
+
+
+  renderQuestion();
+  // createButton()
+}
