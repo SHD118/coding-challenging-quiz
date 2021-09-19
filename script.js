@@ -105,6 +105,22 @@ function WrongAnswerDecrement() {
   }
 }
 
+function IntervalTrigger() {
+    setInterval(function () {
+      if (timerCount === 0 ) {
+
+        checkIfGameIsOver()
+  
+      }
+      else {
+        timerCount -= 1000;
+        timerText.textContent = timerCount;
+        
+      }
+    }, 1000)
+  
+  
+  }
 
 
 
@@ -112,10 +128,22 @@ function startQuiz() {
     IntervalTrigger()
     startDiv.classList.add("hide");
     questionContainer.classList.remove("hide");
-    // nextButton.classList.remove("hide");
     initialButtonPress()
-    
-    
-  
+
   }
   
+function createButton() {
+    buttonDiv.textContent = ''
+    
+      for (let i = 0; i < myQuestions[currentIndex].choices.length; i++) {
+        let buttonTemp = document.createElement("button")
+        buttonTemp.classList.add("btn-grad");
+        buttonTemp.textContent = myQuestions[currentIndex].choices[i];
+        console.log("buttonTemp : " + buttonTemp);
+        buttonDiv.appendChild(buttonTemp)
+        buttonTemp.addEventListener("click", validateButtonClick)
+      
+  
+    }
+  }
+  createButton()
