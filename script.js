@@ -186,3 +186,13 @@ function hideAnswer() {
   }
   
   
+  
+function displayWrongs() {
+    console.log("happens")
+    for (let i = 0; i < temparr.length; i++){
+      let answerTemp = document.createElement("li");
+      answerTemp.textContent = `question ${i} your answer:  ${temparr[i].wrong} correct answer :${temparr[i].right}`
+      answerResults.appendChild(answerTemp);
+    }
+
+  }
