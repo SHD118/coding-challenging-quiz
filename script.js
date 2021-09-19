@@ -86,4 +86,36 @@ function checkIfGameIsOver() {
       displayWrongs();
     }
   
+}
+  
+//event Listeners
+startButton.addEventListener("click", startQuiz)
+function WrongAnswerDecrement() {
+  if (timerCount !== 0) {
+    timerCount -= 1000;
+    
+    console.log(score)
+
+
   }
+  else if (timerCount <= 0) {
+
+
+    checkIfGameIsOver()
+  }
+}
+
+
+
+
+function startQuiz() {
+    IntervalTrigger()
+    startDiv.classList.add("hide");
+    questionContainer.classList.remove("hide");
+    // nextButton.classList.remove("hide");
+    initialButtonPress()
+    
+    
+  
+  }
+  
