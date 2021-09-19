@@ -25,6 +25,24 @@
   
 
 }
+#question{
+  text-align: center; 
+  margin: auto;
+  width: 50%;
+  border: 10px groove purple;
+  padding: 10px;
+  margin-top: 10%;
+
+}
+.questionClass{
+  text-align: center; 
+  margin: auto;
+  width: 50%;
+  border: 10px groove purple;
+  padding: 10px;
+  margin-top: 10%;
+  
+}
 .btn-grad {background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%)}
 .btn-grad {
    margin: 10px;
