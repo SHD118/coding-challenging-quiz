@@ -45,7 +45,7 @@ var displayScores = document.getElementById("display_scores");
 var scoreHeader = document.getElementById("score_header");
 var clearItems = document.getElementById("clear_items");
 //Assignmeents
-var temparr = [];
+var finalAnswerArray = [];
 var score = 0;
 var currentIndex = 0;
 let = timerCount = 30000;
@@ -119,10 +119,10 @@ function getScores() {
     for (let i = 0; i < localStorage.length; i++){
         var key = localStorage.key(i)
         var value = localStorage.getItem(key)
-       let tempPara = document.createElement("p")
-        tempPara.textContent = ` Quiz attempt [${i}] : ${key} : ${value}`
-        console.log(tempPara)
-        displayScores.appendChild(tempPara)
+       let scorelist = document.createElement("p")
+       scorelist.textContent = ` Quiz attempt [${i}] : ${key} : ${value}`
+        console.log(scorelist)
+        displayScores.appendChild(scorelist)
     }
 }
 //End of local storage functionality
@@ -212,14 +212,13 @@ function validateButtonClick(e) {
 
     if (parseTemp !== myQuestions[currentIndex].answer) {
         wrongAnswer.classList.remove("hide");
-        temparr.push({
+        finalAnswerArray.push({
             question : questionTemp,
             wrong: parseTemp,
             right: myQuestions[currentIndex].answer
         })
-        console.log(temparr)
+        console.log(finalAnswerArray)
 
-        WrongAnswerDecrement();
 
     }
     else {
@@ -252,12 +251,12 @@ function hideAnswer() {
 //Displays all the wrong answers at the end of game with what the correct answer was for that questions
 function displayWrongs() {
     console.log("happens")
-    for (let i = 0; i < temparr.length; i++) {
-        let answerTemp = document.createElement("li");
+    for (let i = 0; i < finalAnswerArray.length; i++) {
+        let listItem = document.createElement("li");
         
-        answerTemp.textContent = `question ${i} : ${temparr[i].question}  : your answer:  ${temparr[i].wrong} correct answer:  ${temparr[i].right}`
-        console.log(answerTemp)
-        answerResults.appendChild(answerTemp);
+        listItem.textContent = `question ${i} : ${finalAnswerArray[i].question}  : your answer:  ${finalAnswerArray[i].wrong} correct answer:  ${finalAnswerArray[i].right}`
+        console.log(listItem)
+        answerResults.appendChild(listItem);
     }
 
 }

@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 
     <!-- Start of game will display under start_div-->
     <div  id="start_div"  >
-    <h1>Coding Challenge Quiz</h1>
-    <p>Enjoy taking the quick coding quiz. This quiz will cover basic html, css and javascript questions. Your score will be the timer state.</p>
+    <h1 class ="h1_header">Coding Challenge Quiz</h1>
+    <p class = "h1_questions">Enjoy taking the quick coding quiz. This quiz will cover basic html, css and javascript questions. Your score will be the timer state.</p>
     <button class="btn-grad" id = "start_button">Start</button>    
 </div>
 <!-- Timer will display under timer id -->
@@ -24,7 +30,7 @@
 
 <!-- Question container will display upon start button press and buttons for answers will display dyanmically from the JS -->
 <div id = "question_container" class="hide" >
-    <div id="questions">Questions</div>
+    <div id="questions"  class ="h1_questions">Questions</div>
     <div id ="button_div">
 </div>
 <!--correct_answer_display will display upon correct answer  -->
@@ -38,7 +44,7 @@
 </div>
 <!-- The game_over div will display at end of game and display score which the state of the timer value -->
 <div id = "game_over" class ="hide">
-    <h1>Game is over</h1>
+    <h1  class ="h1_header">Game is over</h1>
     <div id = "score" > 0 </div>
     
 </div>
@@ -48,8 +54,8 @@
 <ul id= "answer_results">
 
 </ul>
-<div id = "local_score" class = "hide">
- <div id = "score_header" class="hide">  <h1>Your Scores</h1> </div> 
+<div id = "local_score" class = "hide" >
+ <div id = "score_header" class="hide">  <h1 class ="h1_header">Your Quiz Scores</h1> </div> 
 <div id = display_scores></div>
 </div>
 <button class="btn-grad" class = "hide"id = "clear_items">Clear</button>  
