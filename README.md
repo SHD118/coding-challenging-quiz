@@ -7,10 +7,10 @@ Created a multiple choice coding quiz
 
 ## Reasoning Behind My Portfolio
 
-* What was my motivation: 
-* Why did you build this project:
-* What problem does this solve: 
-* What did I learn:  
+* What was my motivation: The motivation of this project was to build a simple coding quiz
+* Why did you build this project: The reason behind this project was to improve my skills and understanding regarding event listeners, local storage and modifying html and css using Javascript and 
+* What problem does this solve: The project can be expanded to include more questions to help people practice their understanding of basic coding
+* What did I learn:  I learned how to dynamically create elements in the HTML from javascript. I am also very comfortable with local storage, event listeners and working in JavaScript from the project.
 
 
 ## Table of Content
