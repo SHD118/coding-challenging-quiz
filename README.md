@@ -25,9 +25,10 @@ Created a multiple choice coding quiz
 <br/>
 
 ## Webpage
+![](/Assets/img/start_screen.PNG)
 
 
-
+start_screen.PNG
 
 ## Installation
 
