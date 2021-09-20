@@ -40,7 +40,10 @@ var answerResults = document.getElementById("answer_results");
 const startDiv = document.getElementById("start_div");
 const questionContainer = document.getElementById("question_container");
 var questionText = document.getElementById("questions");
-
+var localScore = document.getElementById("local_score");
+var displayScores = document.getElementById("display_scores");
+var scoreHeader = document.getElementById("score_header");
+var clearItems = document.getElementById("clear_items");
 //Assignmeents
 var temparr = [];
 var score = 0;
@@ -77,18 +80,48 @@ function checkIfGameIsOver() {
         questionContainer.classList.add("hide")
 
         timer.classList.add("hide")
-        getScore.textContent = timerText.textContent
+        
+       
+       
 
         timerCount = -1;
         answerDisplay.classList.remove("hide")
+        
         displayWrongs();
+        setScores()
+        getScores()
     }
 
+}
 
+function setScores() {
+    localScore.classList.remove("hide")
+    scoreHeader.classList.remove("hide")
+    clearItems.classList.remove("hide")
+    var valueofName = prompt("Please enter your initials")
+    getScore.textContent = valueofName + " : " + timerText.textContent 
+    console.log(valueofName)
+    localStorage.setItem(valueofName, getScore.textContent)
+    console.log(valueofName, getScore.textContent)
+}
 
+function getScores() {
+    for (let i = 0; i < localStorage.length; i++){
+        var key = localStorage.key(i)
+        var value = localStorage.getItem(key)
+       let tempPara = document.createElement("p")
+        // localScore.textContent += `${key} : ${value}`
+        tempPara.textContent = ` Quiz attempt [${i}] : ${key} : ${value}`
+        console.log(tempPara)
+        displayScores.appendChild(tempPara)
+    }
 }
 //event Listeners for startbutton will call startQuiz function
 startButton.addEventListener("click", startQuiz)
+clearItems.addEventListener("click", function () {
+    window.localStorage.clear();
+    location.reload();
+})
 
 //This function will decrement the current time by 1000ms if user inputs wrong answer and also check if timer is <=0 than call checkIfGameIsOver()
 function WrongAnswerDecrement() {
@@ -161,8 +194,6 @@ function validateButtonClick(e) {
     var answerButton = e.target
 
     var parseTemp = answerButton.textContent;
-    console.log("line 195: " + myQuestions[currentIndex].answer)
-    // console.log(parseTemp)
     var questionTemp = myQuestions[currentIndex].question
 
     if (parseTemp !== myQuestions[currentIndex].answer) {
