@@ -44,6 +44,7 @@ var localScore = document.getElementById("local_score");
 var displayScores = document.getElementById("display_scores");
 var scoreHeader = document.getElementById("score_header");
 var clearItems = document.getElementById("clear_items");
+
 //Assignmeents
 var finalAnswerArray = [];
 var score = 0;
@@ -133,6 +134,7 @@ startButton.addEventListener("click", startQuiz)
 clearItems.addEventListener("click", function () {
     window.localStorage.clear();
     location.reload();
+    clearItems.classList.add("hide")
 })
 
 //This function will decrement the current time by 1000ms if user inputs wrong answer and also check if timer is <=0 than call checkIfGameIsOver()
@@ -174,6 +176,7 @@ function startQuiz() {
     startDiv.classList.add("hide");
     questionContainer.classList.remove("hide");
     timer.classList.remove("hide");
+    clearItems.classList.add("hide")
     initialButtonPress()
 
 }
@@ -217,7 +220,7 @@ function validateButtonClick(e) {
             wrong: parseTemp,
             right: myQuestions[currentIndex].answer
         })
-        console.log(finalAnswerArray)
+
 
 
     }

@@ -54,6 +54,7 @@
   text-align: center;
  
 }
+
 #question{
   text-align: center; 
   margin: auto;
@@ -120,4 +121,9 @@ ul > li{
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+#clear_items{
+  
+  margin-left: 10%;
+  margin-top: 5%;
 }
