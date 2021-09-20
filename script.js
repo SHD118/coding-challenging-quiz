@@ -94,15 +94,25 @@ function checkIfGameIsOver() {
 
 }
 
+// Local storage functionality to display all scores per Quiz
 function setScores() {
     localScore.classList.remove("hide")
     scoreHeader.classList.remove("hide")
     clearItems.classList.remove("hide")
     var valueofName = prompt("Please enter your initials")
-    getScore.textContent = valueofName + " : " + timerText.textContent 
-    console.log(valueofName)
-    localStorage.setItem(valueofName, getScore.textContent)
-    console.log(valueofName, getScore.textContent)
+    if (valueofName === "" || valueofName === null) {
+        alert("please enter your initials");
+        setScores()
+
+
+    }
+    else {
+  
+        getScore.textContent = valueofName + " : " + timerText.textContent
+        console.log(valueofName)
+        localStorage.setItem(valueofName, getScore.textContent)
+        console.log(valueofName, getScore.textContent)
+    }
 }
 
 function getScores() {
@@ -110,12 +120,14 @@ function getScores() {
         var key = localStorage.key(i)
         var value = localStorage.getItem(key)
        let tempPara = document.createElement("p")
-        // localScore.textContent += `${key} : ${value}`
         tempPara.textContent = ` Quiz attempt [${i}] : ${key} : ${value}`
         console.log(tempPara)
         displayScores.appendChild(tempPara)
     }
 }
+//End of local storage functionality
+
+
 //event Listeners for startbutton will call startQuiz function
 startButton.addEventListener("click", startQuiz)
 clearItems.addEventListener("click", function () {
@@ -170,7 +182,7 @@ function startQuiz() {
 function createButton() {
     buttonDiv.textContent = ''
 
-
+if(currentIndex < myQuestions.length){
     for (let i = 0; i < myQuestions[currentIndex].choices.length; i++) {
         let buttonTemp = document.createElement("button")
         buttonTemp.classList.add("btn-grad");
@@ -178,10 +190,12 @@ function createButton() {
         console.log("buttonTemp : " + buttonTemp);
         buttonDiv.appendChild(buttonTemp)
         buttonTemp.addEventListener("click", validateButtonClick)
+    }
+    
 
-
-
-
+    }
+    else {
+        console.log("Games over pal")
     }
 }
 createButton()
