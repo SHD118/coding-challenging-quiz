@@ -28,7 +28,7 @@ Created a multiple choice coding quiz
 ![](/Assets/img/start_screen.PNG)
 
 
-start_screen.PNG
+
 
 ## Installation
 
