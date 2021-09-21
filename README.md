@@ -27,7 +27,7 @@ Created a multiple choice coding quiz
 ## Webpage
 ![](/Assets/img/start_screen.PNG)
 
-[![Watch the video](/Assets/img/video_img.PNG)](/Assets/img/Coding Quiz.mp4)
+[![Watch the video](/Assets/img/Coding Quiz.mp4)
 
 
 ## Installation
