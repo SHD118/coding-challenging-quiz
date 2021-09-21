@@ -27,7 +27,8 @@ Created a multiple choice coding quiz
 ## Webpage
 ![](/Assets/img/start_screen.PNG)
 
-[![Watch the video](/Assets/img/Coding Quiz.mp4)
+![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/img/Coding_Quiz.gif)
+
 
 
 ## Installation
