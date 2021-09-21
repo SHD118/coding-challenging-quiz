@@ -28,7 +28,7 @@ This project improved my knowledge and understanding of Javascript and how to ma
 ## Webpage
 ![](/Assets/img/start_screen.PNG)
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/img/Coding_Quiz.gif)
+![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/img/Coding_Quiz_vid.gif)
 
 
 
