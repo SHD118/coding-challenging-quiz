@@ -50,7 +50,12 @@ Cell: 908-883-0191
 ```
 
 ## Credits_and_References
-
+https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+https://www.w3schools.com/jsref/prop_html_id.asp
+https://www.w3schools.com/jsref/prop_win_localstorage.asp
+https://cssgradient.io/gradient-backgrounds/
+https://fonts.google.com/specimen/Indie+Flower?query=flower
+https://fonts.google.com/specimen/Acme?query=acme
 --- 
 
 ## License
@@ -58,4 +63,6 @@ Cell: 908-883-0191
 This project is free use
 
 ## Links
+https://shd118.github.io/coding-challenging-quiz/
+https://github.com/SHD118/coding-challenging-quiz
 
