@@ -62,6 +62,6 @@ https://fonts.google.com/specimen/Acme?query=acme
 This project is free use
 
 ## Links
-https://shd118.github.io/coding-challenging-quiz/
-https://github.com/SHD118/coding-challenging-quiz
+* https://shd118.github.io/coding-challenging-quiz/
+* https://github.com/SHD118/coding-challenging-quiz
 
