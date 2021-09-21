@@ -49,7 +49,7 @@ var clearItems = document.getElementById("clear_items");
 var finalAnswerArray = [];
 var score = 0;
 var currentIndex = 0;
-let = timerCount = 30000;
+let = timerCount = 10000;
 
 //Render questions when button is press and checks if there are no more questions ->checksIfGameIsOver
 var renderQuestion = function () {
