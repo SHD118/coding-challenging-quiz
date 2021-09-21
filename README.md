@@ -1,6 +1,5 @@
 # Coding Challenging Quiz
-Created a multiple choice coding quiz
-
+Created by Siddharth Desai
 
 ## Description
 The reason for creating this online coding quiz is to help brush up users' coding skills for things such as interview preparation or just to further their own understanding of fullstack. Upon clicking the start quiz the timer will start as the user navigates through the questions. While the user  answers questions correctly or wrong the quiz will show correct in green or wrong in red. The timer will additionally decrement upon each wrong answer. If the timer reaches 0 or if the user answers all the questions the timer will stop and be stored in local storage. An Alert will display and ask for your initials. And your final score will display which will be the final time upon finishing the quiz. Also all the questions you answered incorrectly will display and show what the correct answer was. Finally, all the quiz attempts will also display so you can see your progress. 
