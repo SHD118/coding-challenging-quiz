@@ -121,7 +121,7 @@ function getScores() {
         var key = localStorage.key(i)
         var value = localStorage.getItem(key)
        let scorelist = document.createElement("p")
-       scorelist.textContent = ` Quiz attempt [${i}] : ${key} : ${value}`
+       scorelist.textContent = ` Quiz attempt [${i}] : ${value}`
         console.log(scorelist)
         displayScores.appendChild(scorelist)
     }
@@ -190,7 +190,6 @@ if(currentIndex < myQuestions.length){
         let buttonTemp = document.createElement("button")
         buttonTemp.classList.add("btn-grad");
         buttonTemp.textContent = myQuestions[currentIndex].choices[i];
-        console.log("buttonTemp : " + buttonTemp);
         buttonDiv.appendChild(buttonTemp)
         buttonTemp.addEventListener("click", validateButtonClick)
     }
