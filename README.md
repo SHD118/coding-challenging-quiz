@@ -18,7 +18,7 @@ This project improved my knowledge and understanding of Javascript and how to ma
 ## Table of Content
 - [Webpage](#webpage)
 - [Installation](#installation)
-- [Contact_Information](#contact_infomration)
+- [Contact_Information](#contact_information)
 - [Credits_and_References](#credits_and_references)
 - [License](#license)
 - [Links](#links)
@@ -41,7 +41,7 @@ This project improved my knowledge and understanding of Javascript and how to ma
 
 
 
-## Contact_Infomration
+## Contact_Information
 
 ```
 Email: shdesai118@gmail.com
