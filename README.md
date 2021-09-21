@@ -28,6 +28,8 @@ This project improved my knowledge and understanding of Javascript and how to ma
 ## Webpage
 ![](/Assets/img/start_screen.PNG)
 
+<br/>
+
 ![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/img/Coding_Quiz_vid.gif)
 
 
@@ -36,9 +38,6 @@ This project improved my knowledge and understanding of Javascript and how to ma
 
 * N/A
  
-
-## Code_Breakdown
-
 
 
 ## Contact_Information
