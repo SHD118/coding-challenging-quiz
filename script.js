@@ -44,6 +44,7 @@ var localScore = document.getElementById("local_score");
 var displayScores = document.getElementById("display_scores");
 var scoreHeader = document.getElementById("score_header");
 var clearItems = document.getElementById("clear_items");
+var GoBack = document.getElementById("go_back");
 
 //Assignmeents
 var finalAnswerArray = [];
@@ -87,7 +88,7 @@ function checkIfGameIsOver() {
 
         timerCount = -1;
         answerDisplay.classList.remove("hide")
-        
+        GoBack.classList.remove("hide")
         displayWrongs();
         setScores()
         getScores()
@@ -95,6 +96,9 @@ function checkIfGameIsOver() {
 
 }
 
+GoBack.addEventListener("click", function(){
+    location.reload();
+})
 // Local storage functionality to display all scores per Quiz
 function setScores() {
     localScore.classList.remove("hide")
@@ -177,6 +181,7 @@ function startQuiz() {
     questionContainer.classList.remove("hide");
     timer.classList.remove("hide");
     clearItems.classList.add("hide")
+    GoBack.classList.add("hide")
     initialButtonPress()
 
 }
