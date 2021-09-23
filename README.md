@@ -26,7 +26,7 @@ This project improved my knowledge and understanding of Javascript and how to ma
 <br/>
 
 ## Webpage
-![](/Assets/img/start_screen.PNG)
+
 
 <br/>
 
